@@ -34,6 +34,7 @@ textarea{
     border-radius: 12px;
     resize: none;
     margin-bottom: 25px;
+    
 }
 textarea::placeholder{
     font-size: 16px;
@@ -65,4 +66,20 @@ select{
     padding: 0 20px;
     border-radius: 35px;
     appearance: none;
+}
+
+@media only screen and (max-width:600px){
+    textarea{
+        width: 92vw;
+        height: 20vh;
+}
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    #select{
+        width: 90vw;
+        font-size: 17px;
+        padding: 10px;
+    }
 }
